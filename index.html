@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link id="fileCss" rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+    <section>
+
+<!-- NAV PARA RESPONSIVE -->
+      <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MI PORTAFOLIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Franklin Cortés</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre_mi.html">Sobre Mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portafolio.html">Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cambiar tema
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><button onclick="principal()" class="dropdown-item">Principal</a></li>
+                    <li><button onclick="azul()" class="dropdown-item">Azul</a></li>
+                    <li><button onclick="rojo()" class="dropdown-item">Rojo</a></li>
+                      <li><button onclick="index_claro()" class="dropdown-item">Claro</a></li>
+                  </ul>
+                </li>
+
+
+            </div>
+          </div>
+        </div>
+      </nav>
+<!-- FIN DE NAV PARA RESPONSIVE -->
+
+
+      <div class="container-fluid ">
+        
+        <div class="row">
+          <div class="col-xl-5 div_foto" data-aos="zoom-out" data-aos-duration="1500">
+            <img src="medios/foto.svg" alt="foto personal" class="foto"/>
+          </div>
+
+          <div class="col-xl-6 info-home container-fluid" data-aos="fade-right">
+            <h1>FRANKLIN CORTÉS.</h1>
+            <h2>Desarrollador Web</h2>
+            <p>
+                Soy un desarrollador web junior ubicado en Bogotá, enfocado en diseñar y desarrollar experiencias limpias y amigables para el usuario. Mi objetivo principal es crear sitios web y aplicaciones que sean atractivos visualmente, fáciles de usar y proporcionen una experiencia positiva a los usuarios. Estoy apasionado por aprender nuevas tecnologías y técnicas de diseño para mejorar mis habilidades y mantenerme al tanto de las últimas tendencias en el mundo del desarrollo web.
+            </p>
+    
+            <a href="sobre_mi.html">
+              <button>
+                <b>MÁS SOBRE MI</b>
+              </button>
+            </a>
+          </div>
+
+          <div class="botones">
+            <!-- CAMBIAR TEMA O COLORES PROFESOR -->
+            <div class="tema-color">
+              <button class="open-panel" onclick="activarPanel()"><img src="medios/cambiar_tema.svg" alt=""></button>
+              <div class="cont-colores">
+                  <button onclick="principal()"></button>
+                  <button onclick="azul()"></button>
+                  <button onclick="rojo()"></button>
+                  <button onclick="index_claro()"></button>
+              </div>
+            </div>
+
+<!-- FIN DE CAMBIAR TEMA O COLORES PROFESOR -->
+            <a href="#"><img src="medios/home_hover.svg" alt="boton home" class="btn_medios"></a>
+            <a href="sobre_mi.html"><img src="medios/sobremi_claro.svg" alt="boton sobre mi" class="btn_medios"></a>
+            <a href="portafolio.html"><img src="medios/portafolio_claro.svg" alt="boton portafolio" class="btn_medios"></a>
+            <a href="contacto.html"><img src="medios/contacto_claro.svg" alt="boton contacto" class="btn_medios"></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+
+    
+  </body>
+</html>

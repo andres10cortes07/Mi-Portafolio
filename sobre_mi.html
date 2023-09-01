@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link id="fileCss" rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+
+  
+  <!-- NAV PARA RESPONSIVE -->
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MI PORTAFOLIO</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Franklin Cortés</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="sobre_mi.html">Sobre Mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Cambiar tema
+              </a>
+              <ul class="dropdown-menu">
+                <li><button onclick="principal()" class="dropdown-item">Principal</a></li>
+                <li><button onclick="azul()" class="dropdown-item">Azul</a></li>
+                <li><button onclick="rojo()" class="dropdown-item">Rojo</a></li>
+                  <li><button onclick="sobre_mi_claro()" class="dropdown-item">Claro</a></li>
+              </ul>
+            </li>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- FIN DE NAV PARA RESPONSIVE -->
+
+
+
+
+
+  <div class="container titulos">
+        <h2 id="fondo">SOBRE MÍ</h2>
+        <h3 id="frente">SOBRE MÍ</h3>
+  </div>
+
+
+
+    
+    <!-- Seccion para seccion de botones de navegacion -->
+    <section>
+      <div class="botones" style="margin-top: -300px; margin-left: 93.5%">
+        <div class="tema-color">
+          <button class="open-panel" onclick="activarPanel()"><img src="medios/cambiar_tema.svg" alt=""></button>
+          <div class="cont-colores">
+              <button onclick="principal()"></button>
+              <button onclick="azul()"></button>
+              <button onclick="rojo()"></button>
+              <button onclick="sobre_mi_claro()"></button>
+          </div>
+        </div>
+
+        <a href="index.html">
+        <img src="medios/home_claro.svg" alt="boton home" class="btn_medios" />
+        </a>
+
+        <a href="#">
+        <img src="medios/sobremi_hover.svg" alt="boton sobre mi" class="btn_medios"/>
+        </a>
+
+        <a href="portafolio.html">
+        <img src="medios/portafolio_claro.svg" alt="boton portafolio" class="btn_medios"/>
+        </a>
+
+        <a href="contacto.html">
+        <img src="medios/contacto_claro.svg" alt="boton contacto" class="btn_medios"/>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Seccion de informacion personal -->
+    <section class="info_per">
+      <h3>INFORMACIÓN PERSONAL</h3>
+      <div class="txt">
+        Soy Franklin, un desarrollador web entusiasta y orientado a los
+        detalles. Mi pasión por crear experiencias web atractivas y funcionales
+        me impulsa a buscar soluciones innovadoras. Con habilidades en HTML, CSS
+        y JavaScript, me dedico a construir sitios web eficientes y amigables
+        para el usuario. Siempre estoy dispuesto/a a enfrentar nuevos desafíos y
+        colaborar en proyectos inspiradores que me permitan crecer
+        profesionalmente en el campo del desarrollo web.
+      </div>
+
+      <div class="datos">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-6">
+            <h4>Nombre</h4>
+            <p>Franklin Andres Cortes Gonzalez</p>
+          </div>
+
+          <div class="col-7 col-sm-5 col-md-4 col-lg-4">
+            <h4>Ubicación</h4>
+            <p>Bogotá, Colombia</p>
+          </div>
+
+          <div class="col-5 col-sm-7 col-md-3 col-lg-2">
+            <h4>Edad</h4>
+            <p>19 años</p>
+          </div>
+
+          <div class="col-12 col-sm-5 col-md-4 col-lg-6">
+            <h4>Teléfono</h4>
+            <p>+57 320-403-17-94</p>
+          </div>
+
+          <div class="col-12 col-sm-7 col-md-5 col-lg-6">
+            <h4>Correo</h4>
+            <p>andres10cortes07@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_mi">
+        <a href="medios/CV.png" download="CV Franklin Cortés">
+          <button>
+            <b>DESCARGAR CV</b>
+          </button>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Seccion para perfil profesional -->
+    <section class="perfil">
+      <h3>PERFIL PROFESIONAL</h3>
+      <div class="info">
+        <div class="row container">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-7 txt">
+            <p>
+              Los Tecnólogos en Análisis y Desarrollo de Software pueden
+              desempeñar sus conocimientos en empresas y organizaciones
+              dedicadas al desarrollo de aplicaciones informáticas, así como en
+              empresas que requieran profesionales para el diseño y desarrollo
+              de programas, soporte técnico, mantenimiento de sistemas, entre
+              otros.
+            </p>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-5">
+            <img src="medios/foto_contenido.svg" alt="imagen de programación">
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Seccion para experiencia laboral -->
+    <section class="exp_laboral">
+      <h3>EXPERIENCIA LABORAL</h3>
+      
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+            <div class="row item" data-aos="zoom-out-right">
+              <div class="col-2 col-sm-2 col-md-2 col-xl-2">
+                <img src="medios/linea_trabajo.svg" alt="">
+              </div>
+
+              <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha">2022</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 nombre_titulo">Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, unde.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+            <div class="row item" data-aos="zoom-out-left">
+              <div class="col-2 col-sm-2 col-md-2 col-xl-2">
+                <img src="medios/linea_trabajo.svg" alt="">
+              </div>
+
+              <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha">2021</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 nombre_titulo">Lorem ipsum dolor sit amet.</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_titulo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, fuga?</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+            <div class="row item" data-aos="zoom-out-right">
+              <div class="col-2 col-sm-2 col-md-2 col-xl-2">
+                <img src="medios/linea_trabajo.svg" alt="">
+              </div>
+
+              <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha">2021</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 nombre_titulo">Lorem, ipsum dolor.</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+            <div class="row item" data-aos="zoom-out-left">
+              <div class="col-2 col-sm-2 col-md-2 col-xl-2">
+                <img src="medios/linea_trabajo.svg" alt="">
+              </div>
+
+              <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha">2021</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 nombre_titulo">Lorem ipsum dolor sit amet consectetur.</div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_titulo">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<br>
+    </section>
+
+<!-- Seccion para estudios -->
+<section class="estudios">
+  <h3>ESTUDIOS</h3>
+  
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+        <div class="row item" data-aos="zoom-out-right">
+          <div class="col-2 col-sm-2 col-md-2 col-xl-2">
+            <img src="medios/linea_estudio.svg" alt="">
+          </div>
+
+          <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha_estudio">2022</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 estudio">Tecnólogo en Análisis y Desarrollo de Software</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_estudio">Tecnólogo en el SENA con una duración de dos años</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+        <div class="row item" data-aos="zoom-out-left">
+          <div class="col-2 col-sm-2 col-md-2">
+            <img src="medios/linea_estudio.svg" alt="">
+          </div>
+
+          <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha_estudio">2022</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 estudio">Diplomado Habilidades en Programación con Énfasis en
+                Aplicaciones Web</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_estudio">Diplomado con la Universidad Nacional de Colombia de una
+                duración de 8 meses</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+        <div class="row item" data-aos="zoom-out-right">
+          <div class="col-2 col-sm-2 col-md-2">
+            <img src="medios/linea_estudio.svg" alt="">
+          </div>
+
+          <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha_estudio">2022</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 estudio">Curso Ciberseguridad Implementación de Soluciones en
+                Seguridad en la Nube de Microsoft Azure
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_estudio">Curso de Microsoft con una duracion de 48 horas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+        <div class="row item" data-aos="zoom-out-left">
+          <div class="col-2 col-sm-2 col-md-2">
+            <img src="medios/linea_estudio.svg" alt="">
+          </div>
+
+          <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha_estudio">2022</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 estudio">English Dot Works 1</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_estudio">Curso de ingles en el SENA de una duración de 60 horas</div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-xl-6">
+
+        <div class="row item" data-aos="zoom-out-right">
+          <div class="col-2 col-sm-2 col-md-2">
+            <img src="medios/linea_estudio.svg" alt="">
+          </div>
+
+          <div class="col-10 col-sm-10 col-md-10 col-xl-10">
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 fecha_estudio">2022</div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 estudio">Introducción al Desarrollo Web
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-12 col-xl-10 desc_estudio">Curso de Google Activate de una duración de 40 horas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br><br>
+</section>
+
+<!-- Seccion para habilidades -->
+<section class="habilidades">
+  <h3>MIS HABILIDADES</h3>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="flip-up">
+        <img src="medios/%html.svg" alt=""><h4>HTML</h4>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="flip-down">
+        <img src="medios/%css.svg" alt=""><h4>CSS</h4>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="flip-up">
+        <img src="medios/%js.svg" alt=""><h4>JavaScript</h4>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-3" data-aos="flip-down">
+        <img src="medios/%sql.svg" alt=""><h4>SQL</h4>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br>
+</section>
+
+<footer class="container-fluid">
+  <div class="row">
+    <div class="col-3 col-sm-5 col-md-3 nombre">
+      <h3>Franklin Cortés</h3>
+    </div>
+
+    <div class="col-md-5 copy">
+      <img src="medios/copyright.svg" alt="">&nbsp;&nbsp;&nbsp;Todos los derechos reservados
+    </div>
+
+    <div class="col-8 col-sm-7 col-md-4 soporte">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 container_btns">
+          <a href="https://wa.link/a8g7vl"><img src="medios/whatsapp.svg" class="btn_footer"></a>
+          <a href="https://www.facebook.com/profile.php?id=100091827021240&mibextid=ZbWKwL"><img src="medios/facebook.svg" alt="" class="btn_footer"></a>
+          <a href="https://github.com/andres10cortes07"><img src="medios/github.svg" alt="" class="btn_footer"></a>
+          <a href="#"><img src="medios/linkedin.svg" alt="" class="btn_footer"></a>
+        </div>
+      </div>
+      
+        <div class="row">
+          <div class="col-sm-12 col-md-12">
+            <p>Soporte: andres10cortes07@gmail.com</p>
+          </div>
+        </div>
+    </div>
+  </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
+
+  </body>
+</html>
