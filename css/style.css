@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     color: transparent;
     border-radius: 40px;
     margin: 10px auto;
-    border: 3px solid black;
+    border: 3px solid rgb(255, 255, 255);
     transition: .5s;
 }
 
@@ -70,20 +70,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cont-colores button:nth-child(1){
-    background: #FFB404;
+    background: #191c20;
 }
 
 .cont-colores button:nth-child(2){
-    background: #1654DE;
+    background: #eee;
 }
 
-.cont-colores button:nth-child(3){
-    background: #DE1616;
-}
-
-.cont-colores button:nth-child(4){
-    background: #6B6B6B;
-}
 
 .dropdown-menu {
     background-color: #191c2079;
