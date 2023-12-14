@@ -531,6 +531,48 @@ form button:hover {
     font-weight: 700 !important;
 }
 
+.linea1 .fila:nth-child(1){
+    background-color: #D9D9D9;
+    border-radius: 45px;
+    padding: 30px;
+}
+
+.linea1 .fila:nth-child(2){
+    background-color: #D9D9D9;
+    border-radius: 45px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.linea1 .fila:nth-child(3){
+    background-color: #D9D9D9;
+    border-radius: 45px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.v_pro{
+    border-radius: 10px;
+    background: #FFB404;
+    color: black;
+    padding: 3px 30px;
+    border: #FFB404 1px solid;
+    font-weight: 900;
+    font-size: 20px;
+    margin-left: 50%;
+    margin-top: 20px;
+}
+
+.v_cod{
+    border-radius: 10px;
+    background: #393E46;
+    color: rgb(255, 255, 255);
+    padding: 3px 40px;
+    border: #393E46 1px solid;
+    font-weight: 900;
+    font-size: 20px;
+}    
 
 /* Resonsive smarthpone homee  */
 @media screen and (max-width: 480px) {
@@ -961,8 +1003,19 @@ form button:hover {
     }
 
     .portafolio {
-        margin-left: 5%;
-        margin-top: -110px;
+        margin-left: 4%;
+        margin-top: -70px;
+    }
+
+    .portafolio h3 {
+        color: black;
+        font-size: 23px;
+    }
+
+    .portafolio p {
+        color: black;
+        font-weight: 600;
+        text-align: justify;
     }
 
     .linea1 {
@@ -976,8 +1029,42 @@ form button:hover {
     }
 
     .portafolio img {
-        height: 170px;
-        margin-top: 30px;
+        height: 50vw;
+        margin-top: 15px;
+    }
+
+    .linea1 .fila:nth-child(1){
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .linea1 .fila:nth-child(2){
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    .linea1 .fila:nth-child(3){
+        margin-top: 20px;
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+
+    .linea1 .fila div:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .v_pro{
+        font-size: 16px;
+        margin-left: 0;
+        padding: 2vw 4vw;
+        margin: 3px 0;
+    }
+
+    .v_cod {
+        font-size: 16px;
+        margin-left: 0;
+        padding: 2vw 4vw;
+        margin-left: 4vw;
     }
 }
 
@@ -1000,7 +1087,7 @@ form button:hover {
     }
 
     .portafolio {
-        margin-left: 5%;
+        margin-left: 5.5%;
         margin-top: -110px;
     }
 
@@ -1016,8 +1103,51 @@ form button:hover {
     }
 
     .portafolio img {
-        height: 260px;
-        margin-top: 60px;
+        height: 52vw;
+        margin-top: 1.5vh;
+    }
+
+    .linea1 .fila:nth-child(1){
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    .linea1 .fila:nth-child(2){
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    .linea1 .fila:nth-child(3){
+        margin-top: 40px;
+        padding: 25px;
+    }
+    
+    .portafolio h3 {
+        color: black;
+        font-size: 28px;
+    }
+
+    .portafolio p {
+        color: black;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .linea1 .fila div:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .v_pro{
+        font-size: 20px;
+        padding: 1vw 4vw;
+        margin: 3px 0 10px 0;
+    }
+
+    .v_cod {
+        font-size: 20px;
+        padding: 1vw 4vw;
+        margin-left: 5vw;
     }
 }
 
@@ -1055,8 +1185,52 @@ form button:hover {
     }
 
     .portafolio img {
-        height: 190px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .portafolio h3 {
+        color: black;
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .portafolio p {
+        color: black;
+        font-weight: 600;
+        font-size: 17px;
+        text-align: justify;
+    }
+
+    .v_pro{
+        font-size: 18px;
+        padding: 5px 8px;
+        margin: 15px 0 0 0;
+    }
+
+    .v_cod {
+        font-size: 18px;
+        padding: 5px 9px;
+        margin-left: 5vw;
+    }
+
+    .linea1 .fila div:nth-child(2){
         margin-top: 40px;
+    }
+
+    .linea1 .fila:nth-child(1){
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    .linea1 .fila:nth-child(2){
+        margin-top: 40px;
+        padding: 25px;
+    }
+
+    .linea1 .fila:nth-child(3){
+        margin-top: 40px;
+        padding: 25px;
     }
 }
 
@@ -1064,13 +1238,26 @@ form button:hover {
 @media screen and (min-width: 1201px){
 
     .portafolio {
-        margin-left: 5%;
+        margin-left: 12vw;
         margin-top: 140px;
     }
 
     .portafolio img {
-        margin-top: 40px;
-        height: 230px;
+        width: 100%;
+        margin-left: -5%;
+    }
+
+    .portafolio h3{
+        font-size: 32px;
+        color: black;
+        text-align: start;
+    }
+
+    .portafolio p {
+        font-size: 20px;
+        margin-top: 20px;
+        color: black;
+        font-weight: 600;
     }
 
     .linea1 {
@@ -1083,6 +1270,37 @@ form button:hover {
         padding-bottom: 60px;
         margin-top: 0;
     }
+
+    .linea1 .fila:nth-child(1){
+        padding: 35px;
+        width: 95%;
+        margin-left: -50px;
+    }
+
+    .linea1 .fila:nth-child(2){
+        padding: 35px;
+        width: 95%;
+        margin-left: -50px;
+    }
+
+    .linea1 .fila:nth-child(3){
+        padding: 35px;
+        width: 95%;
+        margin-left: -50px;
+    }
+
+    .v_pro{
+        font-size: 20px;
+        padding: 10px 30px;
+        margin: 15px 0 0 0;
+    }
+
+    .v_cod {
+        font-size: 20px;
+        padding: 10px 30px;
+        margin-left: 5vw;
+    }
+
 }
 
 
