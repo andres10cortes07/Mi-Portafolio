@@ -310,7 +310,6 @@ section {
 
 .item {
     margin-top: 20px;
-    margin-left: -80px;
 }
 
 
@@ -572,7 +571,11 @@ form button:hover {
     border: #393E46 1px solid;
     font-weight: 900;
     font-size: 20px;
-}    
+}   
+
+.fila div img {
+    border-radius: 20px;
+}
 
 /* Resonsive smarthpone homee  */
 @media screen and (max-width: 480px) {
@@ -1029,7 +1032,7 @@ form button:hover {
     }
 
     .portafolio img {
-        height: 50vw;
+        height: 39vw;
         margin-top: 15px;
     }
 
@@ -1103,7 +1106,7 @@ form button:hover {
     }
 
     .portafolio img {
-        height: 52vw;
+        height: 39vw;
         margin-top: 1.5vh;
     }
 
