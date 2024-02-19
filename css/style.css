@@ -116,6 +116,10 @@ section {
     text-align: center;
 }
 
+.fila_home {
+    height: 100%;
+}
+
 .info-home {
     align-items: center;
     height: 100%;
@@ -618,13 +622,14 @@ form button:hover {
 
 
 /* Resonsive tabletas home  */
-@media screen and (min-width: 481px) and (max-width: 1200px) {
+@media screen and (min-width: 481px) and (max-width: 1199px) {
     .botones {
         display: none;
     }
     
     .foto {
-        height: 600px;
+        height: 100%;
+        width: 40%;
     }
 
     .info-home {
@@ -651,13 +656,58 @@ form button:hover {
 
 
 /* Resonsive laptop home  */
-@media screen and (min-width: 1201px){
+@media screen and (min-width: 1200px) and (max-width: 1350px){
     .navbar {
         display: none;
     }
 
+    .fila_home {
+        height: 100%;
+    }
+
+    .info-home {
+        padding-top: 0;
+    }
+
+    .foto {
+        width: 85%;
+        height: 80%;
+    }
+
 }
 
+/* Responsive laptom home2 por estiramiento de la imagen*/
+@media screen and (min-width: 1351px) and (max-width: 1400px){
+    .navbar {
+        display: none;
+    }
+
+    .foto {
+        width: 85%;
+        height: 80%;
+        max-width: 85%;
+        max-height: 90%;
+    }
+}
+
+/* Responsive laptom home3 por estiramiento de la imagen*/
+@media screen and (min-width: 1401px) and (max-width: 1600px){
+    .navbar {
+        display: none;
+    }
+
+    .foto {
+        width: 80%;
+        height: 90%;
+    }
+}
+
+/* Responsive laptop home*/
+@media screen and (min-width: 1601px){
+    .navbar {
+        display: none;
+    }
+}
 
 /* Responsive smartphone sobremi */
 @media screen and (max-width: 425px) {
