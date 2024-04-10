@@ -120,6 +120,11 @@ section {
     height: 100%;
 }
 
+.info {
+    display: flex;
+    justify-content: center;
+}
+
 .info-home {
     align-items: center;
     height: 100%;
@@ -268,7 +273,9 @@ section {
 
 .perfil img {
     margin: 0 auto;
-    height: 300px;
+    height: auto;
+    width: auto;
+    max-height: 400px;
     margin-left: 50px;
 }
 
@@ -774,8 +781,9 @@ form button:hover {
     
     .perfil img {
         margin-left: 0;
-        margin-top: -20px;
+        margin-top: 20px;
         width: 100%;
+        height: auto;
     }
 
     .exp_laboral {
@@ -789,7 +797,7 @@ form button:hover {
         margin-top: -10px;
     }
 
-    .exp_laboral img {
+    .ctn-linea {
         display: none;
     }
 
@@ -814,6 +822,14 @@ form button:hover {
 
     .fecha_estudio {
         width: 60px;
+    }
+
+    .estudios > .container-fluid > .row >.col-12 >.row{
+        border-bottom: #292929 1px solid;
+    }
+
+    .estudios > .container-fluid > .row:last-child > .col-12 > .row {
+        border-bottom: none; 
     }
 
     .habilidades {
@@ -855,7 +871,6 @@ form button:hover {
     .container_btns {
         margin: 0;
         padding: 10px;
-        margin-top: 20px;
     }
 
     .container_btns img{
@@ -935,8 +950,12 @@ form button:hover {
         font-size: 1.6em;
     }
 
+    .ctn-linea {
+        display: none;
+    }
+
     .item {
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     .fecha, .fecha_estudio {
@@ -959,7 +978,8 @@ form button:hover {
     }
 
     .container_btns {
-        margin-left: 10px;
+        display: flex;
+        justify-content: space-evenly;
         margin-top: 5px;
     }
 
@@ -970,7 +990,7 @@ form button:hover {
 
     .soporte p{
         font-size: 15px;
-        margin-left: 33px;
+        margin-left: 10%;
         margin-bottom: 0;
     }
 }
@@ -992,19 +1012,25 @@ form button:hover {
         padding: 15px;
     }
 
+    .info_per {
+        margin-left: 10%;
+    }
+
     .perfil {
+        margin-left: 10%;
         padding-bottom: 40px;
+        text-align: center;
     }
 
     .perfil img {
         margin-left: 0;
-        margin-top: 30px;
-        width: 100%;
-        margin-bottom: 20px;
+        margin-top: 5%;
+        width: 80%;
+        margin-bottom: 5%;
     }
 
     .estudios, .exp_laboral {
-        margin-left: 90px;
+        margin-left: 80px;
     }
 
     .fecha, .fecha_estudio {
@@ -1015,7 +1041,13 @@ form button:hover {
         margin-left: 80px;
     }
 
+    .habilidades .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .habilidades img {
+        width: 100%;
         margin-top: 45px;
     }
 
