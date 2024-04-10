@@ -13,6 +13,8 @@
     />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link id="fileCss" rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
   </head>
   <body>
 
@@ -159,10 +161,14 @@
         <div class="col-12 col-sm-12 col-md-7">
           <div class="row">
             <div class="col-12 col-md-12 form_cntn">
-              <form action="https://formspree.io/f/mrgnpbpr" method="POST">
-                <input type="text" placeholder="TU NOMBRE" name="nombre" class="nombre_form" required>
-                <input type="email" placeholder="TU CORREO" name="correo" class="correo" required>
-                <input type="textarea" placeholder="TU MENSAJE" name="mensaje" class="mensaje" required>
+              <form action="" method="POST" class="form-contacto">
+                <input type="text" placeholder="TU NOMBRE" name="nombre" class="nombre_form">
+                <p class="e-nombre">Por favor, ingresa tu nombre</p>
+                <input type="email" placeholder="TU CORREO" name="correo" class="correo" >
+                <p class="e-correo">Por favor, ingresa un correo electronico valido</p>
+                <input type="textarea" placeholder="TU MENSAJE" name="mensaje" class="mensaje" >
+                <p class="e-msg">Por favor, ingresa tu mensaje</p>
+                <p class="e-general">Por favor completa correctamente todos los campos</p>
                 <button type="submit">Enviar Mensaje</button>
                 <input type="hidden" name="_next" value="https://andres10cortes07.github.io/MiPortafolio/">
                 <input type="hidden" name="_captcha" value="false">
@@ -175,6 +181,7 @@
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

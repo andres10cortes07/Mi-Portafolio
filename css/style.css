@@ -197,6 +197,7 @@ section {
 #fondo {
     font-size: 120px;
     color: #ffffff06;
+    user-select: none;
 }
 
 #frente {
@@ -515,9 +516,7 @@ form button {
     border-radius: 50px;
     color: white;
     margin-top: 35px;
-    padding: 8px;
-    padding-left: 50px;
-    padding-right: 90px;
+    padding: 8px 50px;
     box-sizing: content-box;
     font-size: 20px;
 }
@@ -527,6 +526,13 @@ form button:hover {
     font-weight: 800;
 }
 
+.e-nombre, .e-msg, .e-correo, .e-general {
+    display: none;
+    color: red;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
 
 .navbar-brand {
     font-size: 20px;
