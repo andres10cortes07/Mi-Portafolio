@@ -1,4 +1,5 @@
 "use strict";
+AOS.init();
 
 function activarPanel() {
     const contenedor = document.querySelector(".cont-colores");
@@ -29,7 +30,7 @@ btnClaro.addEventListener("click", ()=>{
 })
 
 const cambiarTema = ()=> {
-    if(localStorage.tema == "claro") link.href = "css/style_sobremi_claro.css";
+    if(localStorage.tema == "claro") link.href = "css/style_claro.css";
     else {
         link.href = "css/style.css"
     }

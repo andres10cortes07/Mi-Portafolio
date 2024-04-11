@@ -1,4 +1,4 @@
-AOS.init();
+
 emailjs.init('fNonciQZMH90FcxjL');
 
 // Función para validar el nombre
