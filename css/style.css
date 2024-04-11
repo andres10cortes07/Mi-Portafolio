@@ -252,6 +252,8 @@ section {
 }
 
 .btn_mi button:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
     background-color: #FFB404;
     border: 2px solid #FFB404;
 }
@@ -1046,7 +1048,7 @@ form button:hover {
     .habilidades {
         margin-left: 80px;
     }
-
+    
     .habilidades .row {
         display: flex;
         justify-content: space-between;
@@ -1393,7 +1395,6 @@ form button:hover {
         padding: 10px 30px;
         margin-left: 5vw;
     }
-
 }
 
 
