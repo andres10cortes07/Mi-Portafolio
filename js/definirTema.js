@@ -16,12 +16,21 @@ const cambiarTema = ()=> {
 
 document.addEventListener("DOMContentLoaded", ()=>{
     cambiarTema();
+    document.querySelector("section").style.display = "none"
     setTimeout(() => {
-        document.querySelector(".code-loader").style.animation = "desaparecer .5s forwards";
-    }, 2000);
+        document.querySelector(".code-loader").style.animation = "desaparecer 1s forwards";
+        document.querySelector("section").style.display = "block"
+        document.body.style.overflowY = "hidden";
+
+        setTimeout(() => {
+            document.body.style.overflowY = "auto"
+        }, 1500);
+    }, 1000);
 })
 
-if (document.querySelector(".code-loader")) document.querySelector("section").style.animation = "aparecer 5s forwards";
+if (document.querySelector(".code-loader")) {
+    document.querySelector("section").style.animation = "aparecer 5s forwards";
+}
 
 grupo.forEach(item => {
     item.addEventListener("click", (e)=>{

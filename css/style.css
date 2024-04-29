@@ -52,7 +52,7 @@ body {
   to {
       opacity: 1;
       display: block;
-    }
+  }
 }
 
 @keyframes pulse_414 {
