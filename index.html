@@ -16,6 +16,10 @@
   </head>
   <body>
 
+    <div class="code-loader">
+      <span>{</span><span>}</span>
+    </div>
+    
     <section>
 
 <!-- NAV PARA RESPONSIVE -->
@@ -44,14 +48,10 @@
                 <li class="nav-item">
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item">
+                  <a class="nav-link tema-menu" href="#" role="button">
                     Cambiar tema
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><button onclick="principal()" class="dropdown-item">Oscuro</a></li>
-                      <li><button onclick="index_claro()" class="dropdown-item">Claro</a></li>
-                  </ul>
                 </li>
 
 
@@ -77,8 +77,8 @@
             </p>
     
             <a href="sobre_mi.html">
-              <button>
-                MÁS SOBRE MI
+              <button class="btn-estilizado">
+                <p>MÁS SOBRE MI</p>
               </button>
             </a>
           </div>
@@ -86,11 +86,7 @@
           <div class="botones">
             <!-- CAMBIAR TEMA O COLORES PROFESOR -->
             <div class="tema-color">
-              <button class="open-panel" onclick="activarPanel()"><img src="medios/cambiar_tema.svg" alt=""></button>
-              <div class="cont-colores">
-                  <button class="btn-oscuro"></button>
-                  <button class="btn-claro"></button>
-              </div>
+              <button class="open-panel"><img src="medios/cambiar_tema.svg" alt=""></button>
             </div>
 
 <!-- FIN DE CAMBIAR TEMA O COLORES PROFESOR -->

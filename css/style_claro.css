@@ -15,6 +15,58 @@ body {
   font-family: "Josefin Slab", serif;
 }
 
+.code-loader {
+  color: #fff;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 100px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.code-loader span {
+  display: inline-block;
+  animation: pulse_414 0.4s alternate infinite ease-in-out;
+}
+
+.code-loader span:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+@keyframes desaparecer {
+  
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
+
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0.3;
+    display: none;
+  }
+  to {
+      opacity: 1;
+      display: block;
+    }
+}
+
+@keyframes pulse_414 {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+
 .btn_mi,
 .cont-colores,
 .foto {
@@ -162,18 +214,79 @@ section {
   font-size: 25px;
   margin-top: 40px;
 }
+a {
+  text-decoration: none;
+}
+
+.info-home a {
+  display: inline-block;
+}
 
 .info-home button {
-  border: 2px solid #3939392c;
-  border-radius: 50px;
-  font-weight: 900;
-  margin-top: 35px;
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
   padding: 15px 50px;
+  border: #191c20 solid 0.15em;
+  border-radius: 0.75em;
+  color: #191c20;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  margin-top: 30px;
+}
+
+.info-home button p {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+  font-size: 0.75em;
+}
+
+.info-home button p:hover {
+  color: white;
 }
 
 .info-home button:hover {
-  background-color: #191c20;
-  color: #fff;
+  color: white;
+}
+
+.info-home button:active {
+  border-color: #191c20;
+}
+
+.info-home button::after, .info-home button::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #191c20;
+  opacity: 80%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.info-home button::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.info-home button::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.info-home button:hover:before {
+  transform: translateX(-1em);
+}
+
+.info-home button:hover:after {
+  transform: translateX(1em);
 }
 
 .tema {
@@ -246,10 +359,79 @@ form input {
   color: #6b6b6b;
 }
 
-.btn_mi button,
 form button:hover {
   background-color: #ffb404;
   color: #000;
+}
+
+a {
+  display: inline-block;
+}
+
+.btn-estilizado {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  align-items: center;
+  position: relative;
+  padding: 15px 50px;
+  border: #191c20 solid 0.15em;
+  border-radius: 0.75em;
+  color: #191c20;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  margin-top: 30px;
+}
+
+.btn-estilizado p {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 800;
+}
+
+.btn-estilizado:hover p{
+  color: white;
+}
+
+.btn-estilizado:active {
+  border-color: #191c20;
+}
+
+.btn-estilizado::after, .btn-estilizado::before {
+  content: "";
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #191c20;
+  opacity: 80%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.btn-estilizado::before {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.btn-estilizado::after {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.btn-estilizado:hover:before {
+  transform: translateX(-1em);
+}
+
+.btn-estilizado:hover:after {
+  transform: translateX(1em);
 }
 
 .estudios,
@@ -260,19 +442,6 @@ form button:hover {
   text-align: left;
   border-bottom: 1px solid #191c20;
   font-size: 22px;
-}
-
-.btn_mi button {
-  border: 2px solid #ffb404;
-  border-radius: 50px;
-  margin-top: 30px;
-  margin-left: 125px;
-  padding: 15px 90px 15px 50px;
-}
-
-.btn_mi button:hover {
-  transform: scale(1.1);
-  transition: 0.8s;
 }
 
 .perfil {
@@ -531,6 +700,10 @@ form button:hover {
   padding: 30px;
 }
 
+.linea1 .fila:hover {
+  background-color: #393e46f7;
+}
+
 .linea1 .fila:last-child {
   margin-bottom: 30px;
 }
@@ -553,6 +726,9 @@ form button:hover {
 
 .fila div img {
   border-radius: 20px;
+  -webkit-box-shadow: 0px 14px 25px -22px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 14px 25px -22px rgba(255,255,255,1);
+  box-shadow: 0px 14px 25px -22px rgba(255,255,255,1);
 }
 
 @media screen and (max-width: 480px) {
@@ -581,7 +757,7 @@ form button:hover {
   }
   
   .info-home button {
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 15px;
     height: auto;
     margin-bottom: 20px;
@@ -715,10 +891,6 @@ form button:hover {
     font-size: 16px;
   }
   
-  .btn_mi {
-    margin-top: 15px;
-  }
-  
   .info_per button {
     margin: 0;
     font-size: 12px;
@@ -828,10 +1000,6 @@ form button:hover {
   
   .info_per h3 {
     font-size: 2.1em;
-  }
-  
-  .btn_mi {
-    margin-top: 15px;
   }
   
   .info_per button {
@@ -1010,6 +1178,7 @@ form button:hover {
   .portafolio h3 {
     color: #fff;
     font-size: 23px;
+    margin-top: 15px;
   }
   
   .portafolio p {
