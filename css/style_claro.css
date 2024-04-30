@@ -1,8 +1,10 @@
-@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fugaz+One&family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500&family=Rokkitt:wght@100;200;300;400;500&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fugaz+One&family=Josefin+Slab:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500&family=Rokkitt:wght@100;200;300;400;500&display=swap);
+/* Importa los estilos del archivo style_normal.css */
+@import url('style.css');
+
 .info-home button,
 body {
   background-color: #4d4d4d2c;
+  overflow-x:hidden;
 }
 
 #frente,
@@ -10,122 +12,12 @@ body {
   color: #000;
 }
 
-*,
-.datos {
-  font-family: "Josefin Slab", serif;
-}
 
-.code-loader {
-  color: #fff;
-  font-family: Consolas, Menlo, Monaco, monospace;
-  font-weight: bold;
-  font-size: 100px;
-  opacity: 0.8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.code-loader span {
-  display: inline-block;
-  animation: pulse_414 0.4s alternate infinite ease-in-out;
-}
-
-.code-loader span:nth-child(odd) {
-  animation-delay: 0.4s;
-}
-
-@keyframes desaparecer {
-  
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-    display: none;
-  }
-
-}
-
-@keyframes aparecer {
-  from {
-    opacity: 0.3;
-    display: none;
-  }
-  to {
-      opacity: 1;
-      display: block;
-    }
-}
-
-@keyframes pulse_414 {
-  to {
-    transform: scale(0.8);
-    opacity: 0.5;
-  }
-}
-
-.btn_mi,
-.cont-colores,
-.foto {
-  text-align: center;
-}
-
-.info-home button,
-form button,
-section {
-  box-sizing: content-box;
-}
 
 * {
   margin: 0;
   padding: 0;
   font-weight: 500;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: Rokkitt, serif;
-}
-
-.tema-color {
-  z-index: 99;
-  background-color: transparent;
-  margin: 80px 20px 200px;
-}
-
-.cont-colores {
-  width: 100px;
-  padding: 20px 0;
-  background: 0 0;
-  position: absolute;
-  right: -130px;
-  top: 140px;
-  transition: 1s;
-}
-
-.cont-colores.active {
-  right: -15px;
-}
-
-.open-panel {
-  border-radius: 50px;
-  color: #fff;
-  transform: rotate(-90deg);
-  position: relative;
-  transition: 1s;
-  border: none;
-}
-
-#frente,
-.forma {
-  position: absolute;
 }
 
 .cont-colores button {
@@ -139,87 +31,8 @@ h6 {
   transition: 0.5s;
 }
 
-.cont-colores button:hover {
-  transform: translateX(5px);
-  transition: 0.5s;
-}
-
-.cont-colores button:first-child {
-  background: #191c20;
-}
-
-.cont-colores button:nth-child(2) {
-  background: #eee;
-}
-
-.dropdown-menu {
-  background-color: #191c2079;
-  font-size: 15px;
-}
-
 .dropdown-item {
   color: #fff;
-}
-
-.forma {
-  margin-top: -100px;
-  margin-left: 0;
-  height: 950px;
-}
-
-.fila_home,
-.foto,
-.info-home,
-section {
-  height: 100%;
-}
-
-section {
-  margin: 80px auto 0;
-  width: 100%;
-}
-
-.div_foto,
-.info {
-  display: flex;
-  justify-content: center;
-}
-
-.foto {
-  width: 75%;
-  max-width: 100%;
-}
-
-.info-home {
-  align-items: center;
-  margin-left: 0;
-  padding-top: 120px;
-  padding-right: 60px;
-  padding-left: 0;
-}
-
-.info-home h1 {
-  font-size: 70px;
-  font-weight: 400;
-  color: #ffb404;
-}
-
-.info-home h2 {
-  font-size: 70px;
-  font-weight: 200;
-  margin-top: -20px;
-}
-
-.info-home p {
-  font-size: 25px;
-  margin-top: 40px;
-}
-a {
-  text-decoration: none;
-}
-
-.info-home a {
-  display: inline-block;
 }
 
 .info-home button {
@@ -248,10 +61,6 @@ a {
   font-size: 0.75em;
 }
 
-.info-home button p:hover {
-  color: white;
-}
-
 .info-home button:hover {
   color: white;
 }
@@ -269,48 +78,6 @@ a {
   opacity: 80%;
   border-radius: 50%;
   transition: transform 500ms, background 300ms;
-}
-
-.info-home button::before {
-  left: 0;
-  transform: translateX(-8em);
-}
-
-.info-home button::after {
-  right: 0;
-  transform: translateX(8em);
-}
-
-.info-home button:hover:before {
-  transform: translateX(-1em);
-}
-
-.info-home button:hover:after {
-  transform: translateX(1em);
-}
-
-.tema {
-  margin: 0 20px 250px;
-}
-
-.btn_medios {
-  display: block;
-  margin: 20px;
-}
-
-.botones {
-  position: fixed;
-  margin-left: 93%;
-  width: 5%;
-  border: none;
-  z-index: 1000;
-}
-
-.titulos {
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 200px;
 }
 
 #fondo {
@@ -340,12 +107,6 @@ a {
   border: 1px solid #191c20;
 }
 
-.datos {
-  margin-top: 40px;
-  font-size: 23px;
-  font-weight: 600;
-}
-
 .copy,
 .navbar-brand,
 .soporte p,
@@ -354,18 +115,9 @@ form input {
   font-weight: 800;
 }
 
-.datos h4 {
-  font-size: 24px;
-  color: #6b6b6b;
-}
-
 form button:hover {
   background-color: #ffb404;
   color: #000;
-}
-
-a {
-  display: inline-block;
 }
 
 .btn-estilizado {
@@ -416,24 +168,6 @@ a {
   transition: transform 500ms, background 300ms;
 }
 
-.btn-estilizado::before {
-  left: 0;
-  transform: translateX(-8em);
-}
-
-.btn-estilizado::after {
-  right: 0;
-  transform: translateX(8em);
-}
-
-.btn-estilizado:hover:before {
-  transform: translateX(-1em);
-}
-
-.btn-estilizado:hover:after {
-  transform: translateX(1em);
-}
-
 .estudios,
 .exp_laboral,
 .perfil {
@@ -473,12 +207,7 @@ a {
 .exp_laboral {
   align-items: center;
   width: 85%;
-}
-
-.estudios h3,
-.exp_laboral h3 {
-  margin-top: 30px;
-  text-align: center;
+  border-bottom: 1px solid #292929;
 }
 
 .fecha,
@@ -488,36 +217,7 @@ a {
   width: 11%;
 }
 
-.contacto,
-.habilidades,
-.portafolio {
-  text-align: center;
-  width: 85%;
-  font-size: 22px;
-}
 
-.estudio,
-.nombre_titulo {
-  font-weight: 800;
-  padding: 0;
-  margin: 20px 0 10px;
-}
-
-.desc_estudio,
-.desc_titulo {
-  padding: 0;
-  margin: 5px 0;
-}
-
-.item {
-  margin-top: 40px;
-}
-
-.habilidades {
-  margin-left: 130px;
-  margin-top: 25px;
-  align-items: center;
-}
 
 .copy,
 .nombre {
@@ -526,15 +226,6 @@ a {
   color: #fff;
 }
 
-.habilidades h3 {
-  margin-bottom: 50px;
-  margin-top: 35px;
-}
-
-.habilidades h4 {
-  margin-top: 35px;
-  font-size: 30px;
-}
 
 footer {
   height: 160px;
@@ -544,81 +235,8 @@ footer {
   width: 100%;
 }
 
-.nombre {
-  border-right: 1px solid #fff;
-  height: 120px;
-  margin-top: 25px;
-  justify-content: center;
-}
-
-.copy {
-  height: 160px;
-  justify-content: left;
-  padding-left: 50px;
-}
-
-.soporte {
-  height: 160px;
-  display: grid;
-}
-
 .soporte p {
   color: #fff;
-}
-
-.container_btns {
-  padding: 0;
-  margin-top: 35px;
-}
-
-.linea1,
-.linea2 {
-  padding: 20px;
-}
-
-.btn_footer {
-  margin: 15px 15px 0 0;
-  display: inline;
-}
-
-.contacto,
-.portafolio {
-  margin-left: 130px;
-  margin-top: -20px;
-  align-items: center;
-}
-
-.linea2 {
-  margin-top: 15px;
-}
-
-.portafolio p,
-.txt_info {
-  text-align: left;
-}
-
-.filas_info {
-  padding: 5px 0;
-  margin-top: 30px;
-}
-
-.correo,
-.nombre_form {
-  height: 45px;
-  padding: 15px;
-}
-
-.redes {
-  margin-top: 20px;
-  display: flex;
-  margin-left: -15px;
-  justify-content: space-around;
-}
-
-.redes img {
-  height: 60px;
-  margin-left: 25px;
-  margin-right: 45px;
 }
 
 form input {
@@ -628,22 +246,6 @@ form input {
   border: 1px solid #6b6b6b;
   display: flex;
   font-size: 17px;
-}
-
-.nombre_form {
-  width: 40%;
-  margin-top: 50px;
-}
-
-.correo,
-.mensaje {
-  width: 80%;
-  margin-top: 40px;
-}
-
-.mensaje {
-  height: 180px;
-  padding: 15px 15px 120px;
 }
 
 form button {
@@ -676,16 +278,6 @@ form button:hover {
   font-size: 20px;
   color: #ffb404;
 }
-
-.nav-link {
-  font-size: 18px;
-}
-
-.active {
-  color: #ffb404 !important;
-  font-weight: 700 !important;
-}
-
 .v_cod,
 .v_pro {
   color: #000;
@@ -702,10 +294,6 @@ form button:hover {
 
 .linea1 .fila:hover {
   background-color: #393e46f7;
-}
-
-.linea1 .fila:last-child {
-  margin-bottom: 30px;
 }
 
 .v_pro {
@@ -729,123 +317,8 @@ form button:hover {
   border: 3px solid #e0e0e0;
 }
 
-@media screen and (max-width: 480px) {
-  .info-home h1,
-  .info-home h2 {
-    font-size: 35px;
-    text-align: center;
-  }
-  
-  .botones {
-    display: none;
-  }
-  
-  .info-home {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .info-home h2 {
-    margin-top: 3px;
-  }
-  
-  .info-home p {
-    font-size: 20px;
-    text-align: justify;
-  }
-  
-  .info-home button {
-    font-size: 20px;
-    margin-top: 15px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-}
-
-@media screen and (min-width: 481px) and (max-width: 1199px) {
-  .info-home h1,
-  .info-home h2 {
-    font-size: 45px;
-    text-align: center;
-  }
-  
-  .botones {
-    display: none;
-  }
-  
-  .foto {
-    height: 100%;
-    width: 40%;
-  }
-  
-  .info-home {
-    padding: 20px 40px;
-    text-align: center;
-  }
-  
-  .info-home h2 {
-    margin-top: 3px;
-  }
-  
-  .info-home p {
-    font-size: 23px;
-    text-align: justify;
-  }
-  
-}
-
-@media screen and (min-width: 1200px) and (max-width: 1350px) {
-  .navbar {
-    display: none;
-  }
-  
-  .fila_home {
-    height: 100%;
-  }
-  
-  .info-home {
-    padding-top: 0;
-  }
-  
-  .foto {
-    width: 85%;
-    height: 80%;
-  }
-  
-}
-
-@media screen and (min-width: 1351px) and (max-width: 1400px) {
-  .navbar {
-    display: none;
-  }
-  
-  .foto {
-    width: 85%;
-    height: 80%;
-    max-width: 85%;
-    max-height: 90%;
-  }
-  
-}
-
-@media screen and (min-width: 1401px) and (max-width: 1600px) {
-  .navbar {
-    display: none;
-  }
-  
-  .foto {
-    width: 80%;
-    height: 90%;
-  }
-  
-}
-
-@media screen and (min-width: 1601px) {
-  .navbar {
-    display: none;
-  }
-  
+.tecnologia {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 425px) {
@@ -943,11 +416,6 @@ form button:hover {
     margin-top: 0;
     margin-bottom: 15px;
     text-align: left;
-  }
-  
-  .habilidades img {
-    height: 180px;
-    margin-top: 20px;
   }
   
   footer {
@@ -1058,11 +526,6 @@ form button:hover {
     font-size: 1.6em;
   }
   
-  .habilidades img {
-    height: 210px;
-    margin-top: 40px;
-  }
-  
   .container_btns {
     display: flex;
     justify-content: space-evenly;
@@ -1126,11 +589,6 @@ form button:hover {
   .habilidades .row {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .habilidades img {
-    width: 100%;
-    margin-top: 45px;
   }
   
   .perfil h3 {
@@ -1607,4 +1065,3 @@ form button:hover {
   }
   
 }
-

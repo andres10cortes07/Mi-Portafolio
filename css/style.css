@@ -1,8 +1,14 @@
 @import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fugaz+One&family=Josefin+Slab:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500&family=Rokkitt:wght@100;200;300;400;500&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fugaz+One&family=Josefin+Slab:wght@100;200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Open+Sans:wght@500&family=Poppins:wght@100;200;300;400;500&family=Rokkitt:wght@100;200;300;400;500&display=swap);
+
+html, body {
+  overflow-x:hidden;
+}
+
 .dropdown-item,
 body {
   color: #fff;
+  overflow-y: hidden;
 }
 
 *,
@@ -301,8 +307,7 @@ a {
   z-index: 1000;
 }
 
-.info_per,
-.perfil {
+.info_per, .habilidades{
   width: 80%;
   border-bottom: 1px solid #292929;
 }
@@ -421,28 +426,11 @@ a {
 }
 
 .estudios,
-.exp_laboral,
-.perfil {
+.exp_laboral{
   margin-left: 130px;
   margin-top: 25px;
   text-align: left;
   font-size: 22px;
-}
-
-.perfil {
-  align-items: center;
-}
-
-.perfil h3 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.perfil img {
-  margin: 0 auto 0 50px;
-  height: auto;
-  width: auto;
-  max-height: 400px;
 }
 
 .txt {
@@ -499,6 +487,7 @@ a {
 }
 
 .habilidades {
+  height: 13em;
   margin-left: 130px;
   margin-top: 25px;
   align-items: center;
@@ -518,6 +507,96 @@ a {
 .habilidades h4 {
   margin-top: 35px;
   font-size: 30px;
+}
+
+#scroller {
+  width: 100%;
+  border: 2px solid transparent;
+  mask-image: linear-gradient(to right,
+    transparent 0%,
+    white 30%,
+    white 70%,
+    transparent 100%
+  );
+}
+
+
+#scroller section:last-child{
+  animation: scroll_right 20s linear infinite;
+}
+
+#scroller section {
+  max-width: 100vw;
+  white-space: nowrap;
+  min-width: fit-content;
+  height: min-content;
+  display: flex;
+  gap: 16px;
+  animation: scroll_left 20s linear infinite;
+  padding: 0 8px;
+  margin: 20px;
+  justify-content: space-evenly;
+}
+
+#scroller section:hover {
+  animation-play-state: paused;
+}
+
+.tecnologia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25em 1.3em;
+  transition: all .3s;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.tecnologia:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  font-weight: 700;
+}
+
+#scroller section {
+  width: max-content; /* Ajustamos el ancho para evitar saltos */
+}
+
+@keyframes scroll_left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-30% - 20%)); /* Ajustamos para que el primer y último cuadro sean iguales */
+  }
+}
+
+@keyframes scroll_right {
+  0% {
+    transform: translateX(calc(-30% - 20%)); /* Ajustamos para que el primer y último cuadro sean iguales */
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+@media (max-width: 768px) {
+  #scroller section:last-child{
+    animation: none;
+    animation: scroll_right 10s linear infinite;
+  }
+  
+  #scroller section {
+    animation: none;
+    animation: scroll_left 10s linear infinite;
+  }
 }
 
 footer {
@@ -714,6 +793,7 @@ form button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  
   .info-home h1,
   .info-home h2 {
     font-size: 35px;
@@ -876,24 +956,11 @@ form button:hover {
   .info_per button {
     margin: 0;
     font-size: 12px;
-    padding: 15px;
-  }
-  
-  .perfil {
-    margin-left: 18px;
-    padding: 15px 15px 10px;
-    margin-top: -10px;
+    padding: 4px 0;
   }
   
   .txt {
     padding: 10px;
-  }
-  
-  .perfil img {
-    margin-left: 0;
-    margin-top: 20px;
-    width: 100%;
-    height: auto;
   }
   
   .estudios,
@@ -927,11 +994,6 @@ form button:hover {
     margin-top: 0;
     margin-bottom: 15px;
     text-align: left;
-  }
-  
-  .habilidades img {
-    height: 180px;
-    margin-top: 20px;
   }
   
   footer {
@@ -979,9 +1041,8 @@ form button:hover {
   .estudios,
   .exp_laboral,
   .habilidades,
-  .info_per,
-  .perfil {
-    margin-left: 60px;
+  .info_per{
+    margin-left: 50px;
   }
   
   .info_per h3 {
@@ -994,24 +1055,12 @@ form button:hover {
     padding: 15px;
   }
   
-  .exp_laboral h3,
-  .perfil h3 {
+  .exp_laboral h3{
     font-size: 1.5em;
-  }
-  
-  .perfil {
-    padding-bottom: 10px;
   }
   
   .txt {
     padding: 10px;
-  }
-  
-  .perfil img {
-    margin-left: 0;
-    margin-top: 30px;
-    width: 100%;
-    margin-bottom: 20px;
   }
   
   .estudios h3,
@@ -1039,11 +1088,6 @@ form button:hover {
     font-size: 1.6em;
   }
   
-  .habilidades img {
-    height: 210px;
-    margin-top: 40px;
-  }
-  
   .container_btns {
     display: flex;
     justify-content: space-evenly;
@@ -1064,8 +1108,7 @@ form button:hover {
 }
 
 @media screen and (min-width: 768px) {
-  .info_per,
-  .perfil {
+  .info_per{
     margin-left: 10%;
   }
   
@@ -1079,18 +1122,6 @@ form button:hover {
     margin: 15px 0 0;
     font-size: 1em;
     padding: 15px;
-  }
-  
-  .perfil {
-    padding-bottom: 40px;
-    text-align: center;
-  }
-  
-  .perfil img {
-    margin-left: 0;
-    margin-top: 5%;
-    width: 80%;
-    margin-bottom: 5%;
   }
   
   .estudios,
@@ -1107,15 +1138,6 @@ form button:hover {
   .habilidades .row {
     display: flex;
     justify-content: space-between;
-  }
-  
-  .habilidades img {
-    width: 100%;
-    margin-top: 45px;
-  }
-  
-  .perfil h3 {
-    font-size: 1.6em;
   }
   
   .info_per h3 {
@@ -1157,6 +1179,7 @@ form button:hover {
   .portafolio h3 {
     color: #000;
     font-size: 23px;
+    margin-top: 15px;
   }
   
   .portafolio p {
