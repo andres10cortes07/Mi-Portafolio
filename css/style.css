@@ -128,6 +128,12 @@ h6 {
   border: none;
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg: rgba(255, 255, 255, 0.406);
+  --bs-tooltip-color: rgb(255, 255, 255);
+  --bs-tooltip-font-size: 20px;
+}
+
 #frente,
 .forma {
   position: absolute;

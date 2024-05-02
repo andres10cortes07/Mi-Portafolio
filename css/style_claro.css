@@ -141,6 +141,12 @@ form button:hover {
   margin-top: 30px;
 }
 
+.custom-tooltip {
+  --bs-tooltip-bg: rgba(0, 0, 0, 0.668);
+  --bs-tooltip-color: rgb(255, 255, 255);
+  --bs-tooltip-font-size: 20px;
+}
+
 .btn-estilizado p {
   z-index: 1;
   margin: 0;
