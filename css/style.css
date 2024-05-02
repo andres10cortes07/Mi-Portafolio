@@ -161,6 +161,27 @@ form button:hover {
   background-color: #ffb404;
 }
 
+.nombre-index {
+  white-space: nowrap;
+  width: 17ch;
+  animation: escribir 1.5s steps(17), blink .5s infinite step-end alternate;
+  animation-delay: .75s;
+  overflow: hidden;
+}
+
+@keyframes escribir {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-right: 2px solid;
+    border-color: white;
+  }
+}
+
 .dropdown-menu {
   background-color: #191c2079;
   font-size: 15px;
@@ -1299,6 +1320,7 @@ form button:hover {
     margin-top: 25px;
     padding: 10px 15px;
     font-size: 15px;
+    margin-bottom: 20px;
   }
   
 }
