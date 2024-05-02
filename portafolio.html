@@ -12,45 +12,23 @@
       crossorigin="anonymous"
     />
     <link id="fileCss" rel="stylesheet" href="css/style.css" />
-
+    <script src="js/navResponsive.js"></script>
   </head>
   <body>
 
-    <!-- NAV PARA RESPONSIVE -->
-<nav class="navbar navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">MI PORTAFOLIO</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Franklin Cortés</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="sobre_mi.html">Sobre Mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="portafolio.html">Portafolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contacto.html">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link tema-menu" href="#" role="button">
-              Cambiar tema
-            </a>
-          </li>
-      </div>
-    </div>
-  </div>
-</nav>
+
+<!-- NAV PARA RESPONSIVE -->
+  <div class="div-nav"></div>
+  <script>
+    const nav = navResponsive()
+    document.querySelector(".div-nav").innerHTML = nav
+    document.querySelector(".a-portafolio").classList.add("active")
+
+    const home = document.querySelector(".a-home").href = "index.html"
+    const sobremi = document.querySelector(".a-sobre-mi").href = "sobre_mi.html"
+    const portafolio = document.querySelector(".a-portafolio").href = "#"
+    const contacto = document.querySelector(".a-contacto").href = "contacto.html"
+  </script>
 <!-- FIN DE NAV PARA RESPONSIVE -->
 
 
