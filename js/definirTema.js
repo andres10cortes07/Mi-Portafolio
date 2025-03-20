@@ -18,18 +18,26 @@ var ruta = window.location.pathname;
 var partesRuta = ruta.split('/');
 var nombreArchivo = partesRuta[partesRuta.length - 1];
 
-if (nombreArchivo == "index.html"){
-    document.addEventListener("DOMContentLoaded", ()=>{
+if (nombreArchivo === "index.html" || nombreArchivo === "" || nombreArchivo === "Mi-Portafolio"){
+    document.addEventListener("DOMContentLoaded", () => {
         cambiarTema();
-        document.body.style.overflowY = "hidden";
-        document.querySelector("section").style.display = "none"
-        document.querySelector(".code-loader").style.animation = "desaparecer 2s forwards";
 
-        setTimeout(() => {
-            document.querySelector("section").style.display = "block"
-            document.body.style.overflowY = "auto"
-        }, 2000);
-    })
+        document.body.style.overflowY = "hidden"; 
+        const section = document.querySelector("section");
+        const loader = document.querySelector(".code-loader");
+
+        if (section && loader) {
+            section.style.display = "none"; 
+            loader.style.animation = "desaparecer 2s forwards";
+
+            setTimeout(() => {
+                loader.style.display = "none"; // Oculta completamente el loader
+                section.style.display = "block"; 
+                section.style.animation = "aparecer 0.5s forwards"; 
+                document.body.style.overflowY = "auto"; 
+            }, 2000);
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", ()=>{

@@ -31,6 +31,7 @@ body {
 .code-loader span {
   display: inline-block;
   animation: pulse_414 0.4s alternate infinite ease-in-out;
+  user-select: none;
 }
 
 .code-loader span:nth-child(odd) {
